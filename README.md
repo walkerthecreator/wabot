@@ -18,7 +18,6 @@ Wabot is a full-stack e-commerce application developed using the MERN stack (Mon
   - React (UI library)
   - Redux (State management)
   - React Router (Routing)
-  - Material-UI (UI components)
   - Axios (HTTP requests)
   
 - Backend:
