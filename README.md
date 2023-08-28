@@ -26,11 +26,9 @@ Wabot is a full-stack e-commerce application developed using the MERN stack (Mon
   - MongoDB (Database)
   - Mongoose (ODM library)
   - JSON Web Tokens (JWT) for authentication
-  - Stripe for payment processing
   
 - Deployment and Version Control:
   - Git and GitHub (Version control)
-  - Heroku (Deployment)
 
 ## Getting Started
 
