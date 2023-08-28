@@ -1,0 +1,667 @@
+/* color pallette:
+blackz: #1E1D1D
+blue:   #1D6BFF
+green:  #55D193
+white:  #DFEAFF
+nblack: #282c34        */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+*{
+    font-family: 'epilogue',sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+body{
+    background-color:#1E1D1D;
+    color: white;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navBar{
+    display: flex;
+    flex-direction:row;
+    position:fixed;
+    justify-content: center;
+    background-color: #282c34;
+    color: aliceblue;
+    border-radius: 14px;
+    margin:10px 30vw;
+    align-items: center;
+    z-index: 9;
+}
+.navBar h1{
+    padding: 0;
+    margin: 0 5px;
+}
+.navBar:hover{
+    /* padding: 2px; */
+    transition: 0.5s;
+    color: azure;
+}
+
+.navBar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+select{
+    width: 20%;
+    padding: 2px;
+}
+
+.cards{
+    background-color: #282c34;
+    color: aliceblue;
+    max-height: 300px;
+    height: 500px;
+    width: 370px;
+    margin: 20px 30px;
+    border-radius: 15px;
+    text-align: center;   
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 14px 0;
+    box-sizing: content-box;
+}
+
+.cards small {
+    align-self: left;
+    padding:8px 14px;
+    font-size: 20px;
+    color: greenyellow;
+    border-radius: 6px;
+}
+
+.cards span {
+    
+}
+
+
+
+.cards img{
+    overflow: hidden;
+    width: 350px;
+    min-height: 150px;
+    height: 200px;
+    object-fit:contain ;
+    border-radius: 8px ;
+    background-color: white;
+}
+
+.cards > div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+button{
+    border: none;
+    width: 340px;
+    color: white;
+    background-color: #1D6BFF;
+    padding: 7px 18px;
+    border-radius: 6px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color:#1D6BFF ;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.cards h1{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: #1D6BFF;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+
+.container li:hover{
+    background-color: #282c34;
+    border-radius: 19px;
+}
+.container h2{
+    margin: 0;
+    padding: 0;
+}
+
+.container a{
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+
+/* Product page */
+
+.header-product-heading{
+    z-index: 1;
+    position: absolute;
+    right: 22vw;
+    top: 30vh;
+    font-size: 10vw;
+}
+
+.product-header-wrapper{
+    z-index: 0;
+    width: 80vw;
+    height: 50vh;
+    margin: 15px auto;
+    background-color: #1D6BFF ;
+    border-radius:30px ;
+
+}
+
+.product-header-img{
+    background: url("./photo/airpod.png");
+    background-attachment:scroll ;
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+
+
+.product-header {
+    text-align: center;
+}
+
+.product-card-container{
+    margin: 6vh auto;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* cart  */
+
+.cart-img{
+    width: 9vw;
+    border-radius: 20%;
+}
+
+.cart-btn-grp{
+    margin: 100px;
+}
+
+.cart-btn-grp button{
+    width:50px;
+    padding: 8px 5px;
+    display: inline-block;
+}
+.cart-btn-grp h1{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.cart-div{
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Home */
+
+.home-div{
+    text-align: center;
+    margin: 60px;
+}
+
+.explore-product{
+    margin: 30px;
+}
+
+.home-buttons-group{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.home-buttons-group button{
+    padding: 20px;
+}
+
+.home-buttons-group button:hover{
+    background-color: #282c34;
+    padding: 18px;
+    border: #1D6BFF solid 2px;
+    color: white;
+}
+
+/* About */
+.about-div{
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.about-div2{
+    background-color: #282c34;
+    border: #1D6BFF solid 2px;
+    border-radius:25px ;
+}
+
+.about-div2 p{
+    text-align: justify;
+    margin: 50px;
+    font-size: 20px;
+}
+
+
+/* class */
+
+/* transform:translate(x,y)
+        :rotate(45deg)  x,y,z
+        :skew(45deg) 
+        :scale(2) scale up or down dimensions
+        : */
+
+/* transition
+-duration
+-delay
+-timing fn
+- */
+
+/* animation */
+
+/* contact */
+
+.contact-div{
+    width: 600px;
+    background-color: #282c34;
+    text-align: center;
+    margin: 80px auto;
+    border-radius:10px ;
+}
+
+.form input{
+    width:80%;
+    height: 4vh;
+    margin: 10px 40px;
+    border:#1D6BFF ;
+    border-radius:5px ;   
+}
+
+.message{
+    height: 8vh;
+}
+.submit-btn{
+    margin: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+/* Effect */
+
+.val{
+    outline:blue solid 2px;
+    height: 200px;
+    width: 400px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.val button {
+    margin: 10px;
+}
+
+.footerEffect{
+    text-align: center;
+    
+}
+
+
+/* Login page */
+
+.login-form{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding: 20px;
+    background-color:#282c34;
+    margin: 10vh auto;
+}
+
+.login-form input{
+    padding: 5px;
+    outline: #1D6BFF;
+    margin: 8px 25px;
+    width: 80%;
+}
+
+.login-form * {
+    margin: 25px;
+}
+
+.login-form  a{
+    color:#1D6BFF;
+    text-decoration: none;
+}
+
+.login-form  a:hover{
+    color: #1d6cffb4;
+    
+}
+/* SignUp */
+
+.signup-container{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding: 20px;
+    background-color:#282c34;
+    margin: 10vh auto;
+}
+
+.signup-container > input{
+    padding: 5px;
+    outline: #1D6BFF;
+    margin: 8px 25px;
+    width: 80%;
+}
+
+.signup-container a{
+    color: #1D6BFF;
+    text-decoration: none;
+}
+
+.signup-container  a:hover{
+    color:#1d6cffb4 ;
+}
+
+.name-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 8px auto; */
+    margin: 8px 25px;
+    width: 82%;
+}
+
+input {
+    border-radius: 6px;
+}
+
+
+
+.name-wrapper input{
+    padding: 5px;
+    outline: #1D6BFF;
+    width: 46%;
+}
+
+.signup-container button {
+    margin: 25px;
+}
+
+
+
+/* cart */
+
+.cart-card div{
+    width: 80%;
+}
+
+.card-btn{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.cart-card img{
+    margin-right: 20px;
+    width: 30%;  
+    object-fit: cover;
+}
+
+.loading-div{
+    height: 200px;
+    width: 380px;
+    height: 300px;
+    background-color: #2b2d32;
+    padding: 10px 0;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loading-div div{
+    background-color: rgba(255, 255, 255, 0.431);
+    width: 90%;
+    height: 150px;
+    border-radius: 12px;
+}
+
+.loading-div p{
+    background-color: #a8a8a87e;
+    padding: 15px 10px;
+    border-radius: 12px ;
+    width: 80%;
+    /* width: 100%; */
+}
+
+.loading-div button{
+    height: 40px;
+    background-color: #1d6cff7a;
+}
+
+
+.seller-products-wrapper{
+    display: flex ;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.seller-products{
+    background-color: #333333;
+    border: 2px solid #1D6BFF;
+    width: 350px ;
+    height: 300px;
+    border-radius: 12px ;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seller-products button{
+    width: 100%;
+}
+
+
+mark{
+    padding: 4px ;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #1D6BFF;
+    color: white;
+}
+
+.update-modal{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 100px;
+    border-radius: 12px ;
+    border: 2px solid black;
+    height: 80vh;
+    left: 40px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20%;
+
+}
+
+.update-modal > div {
+    width: 60%;
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+    margin: 15px auto;
+}
+
+#btn-wrapper-update{
+    width: 60%;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.update-modal input , select , option{
+    width: 80%;
+    padding: 10px;
+}
+
+.cancel-btn{
+    background-color: white;
+    border: 2px solid #1D6BFF;
+    color: #1D6BFF;
+}
+
+.add-product{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50vh;
+    row-gap: 20px;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.add-product input{
+    padding: 6px;
+}
+
+/* seller page  */
+
+table{
+    background-color: #2b2d32;
+    width: 80%;
+    margin: 10px auto;
+}
+
+tr{
+    background-color: #1E1D1D;
+}
+
+td , th{
+    padding: 10px;
+}
+
+.task-btn-wrapper{
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-around;   
+}
+
+.task-btn-wrapper button{
+    padding: 0;
+    width: 35%;
+}
+
+.task-btn-wrapper button svg{
+    width: 20px;
+}
+
+.task-btn-wrapper button:nth-child(2){
+    color: #C30101;
+    border: 1px solid #C30101;
+    background-color: #1E1D1D;
+}
+
+.task-btn-wrapper button:nth-child(1){
+    color: #1D6BFF;
+    border: 1px solid #1D6BFF;
+    background-color: #1E1D1D;
+}
+
+.add-new-product{
+    margin: 40px auto;
+    width: 80vw;
+    text-align: center;
+    color: #1D6BFF;
+    text-decoration: none;
+    font-size: 1em;
+
+}
